@@ -50,13 +50,13 @@ angular.module('Onceinteractiveapp.services', [])
  
         return {
             signin: function (form) {
-                return $http.post(base+'/api/v1/Onceinteractiveapp/auth/login', form);
+                return $http.post(base+'/api/v1/onceinteractiveapp/auth/login', form);
             },
             signup: function (form) {
-                return $http.post(base+'/api/v1/Onceinteractiveapp/auth/register', form);
+                return $http.post(base+'/api/v1/onceinteractiveapp/auth/register', form);
             },
             getAll: function (email) {
-                return $http.get(base+'/api/v1/Onceinteractiveapp/data/list', {
+                return $http.get(base+'/api/v1/onceinteractiveapp/data/list', {
                     method: 'GET',
                     params: {
                         token: email
@@ -64,7 +64,7 @@ angular.module('Onceinteractiveapp.services', [])
                 });
             },
             getOne: function (id, email) {
-                return $http.get(base+'/api/v1/Onceinteractiveapp/data/item/' + id, {
+                return $http.get(base+'/api/v1/onceinteractiveapp/data/item/' + id, {
                     method: 'GET',
                     params: {
                         token: email
@@ -72,7 +72,7 @@ angular.module('Onceinteractiveapp.services', [])
                 });
             },
             saveItem: function (form, email) {
-                return $http.post(base+'/api/v1/Onceinteractiveapp/data/item', form, {
+                return $http.post(base+'/api/v1/onceinteractiveapp/data/item', form, {
                     method: 'POST',
                     params: {
                         token: email
@@ -80,7 +80,7 @@ angular.module('Onceinteractiveapp.services', [])
                 });
             },
             putItem: function (id, form, email) {
-                return $http.put(base+'/api/v1/Onceinteractiveapp/data/item/' + id, form, {
+                return $http.put(base+'/api/v1/onceinteractiveapp/data/item/' + id, form, {
                     method: 'PUT',
                     params: {
                         token: email
@@ -88,7 +88,7 @@ angular.module('Onceinteractiveapp.services', [])
                 });
             },
             deleteItem: function (id, email) {
-                return $http.delete(base+'/api/v1/Onceinteractiveapp/data/item/' + id, {
+                return $http.delete(base+'/api/v1/onceinteractiveapp/data/item/' + id, {
                     method: 'DELETE',
                     params: {
                         token: email
