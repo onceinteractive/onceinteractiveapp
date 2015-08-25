@@ -2,8 +2,8 @@
 <widget id="com.ionicframework.onceinteractiveapp248792" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Onceinteractiveapp</name>
   <description>
-        An Ionic Framework and Cordova project for Onceinteractive.
-    </description>
+        Onceinteractive app that users can register and login. Then s/he can create a few bucket list items.
+  </description>
   <author email="nolan@onceinteractive.com" href="http://onceinteractive.com/">
       Ionic Framework Team
     </author>
