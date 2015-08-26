@@ -1,4 +1,4 @@
-angular.module('Onceinteractiveapp.services', [])
+angular.module('onceinteractive.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
        var base = "https://onceinteractiveapp.herokuapp.com";
         $rootScope.show = function (text) {
